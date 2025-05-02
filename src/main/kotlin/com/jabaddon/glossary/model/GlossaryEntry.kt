@@ -6,7 +6,8 @@ import java.util.UUID
 data class GlossaryEntry(
     val id: UUID? = null,
     val term: String,
-    val definition: String
+    val definition: String,
+    val distance: Float? = null
 ) {
     fun toDocument(): Document {
         val content = "$term: $definition"
@@ -26,13 +27,19 @@ data class GlossaryEntry(
             return GlossaryEntry(
                 id = metadata["id"]?.let { UUID.fromString(it as String) },
                 term = metadata["term"] as String,
-                definition = metadata["definition"] as String
+                definition = metadata["definition"] as String,
+                distance = metadata["distance"] as? Float
             )
         }
     }
 }
 
+data class SearchResult(
+    val glossaryEntry: GlossaryEntry,
+    val distance: Float?,
+    val type: List<String>
+)
+
 data class SearchResults(
-    val vectorResults: List<GlossaryEntry>,
-    val sqlResults: List<GlossaryEntry>
+    val results: List<SearchResult>
 )
