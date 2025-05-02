@@ -1,0 +1,25 @@
+package com.jabaddon.glossary.config
+
+import org.springframework.ai.vectorstore.PgVectorStore
+import org.springframework.ai.vectorstore.PgVectorStore.PgVectorStoreConfig
+import org.springframework.context.annotation.Bean
+import org.springframework.context.annotation.Configuration
+import org.springframework.jdbc.core.JdbcTemplate
+
+@Configuration
+class VectorStoreConfig {
+
+    @Bean
+    fun vectorStore(jdbcTemplate: JdbcTemplate): PgVectorStore {
+        val config = PgVectorStoreConfig.builder()
+            .withTableName("glossary_embeddings")
+            .withEmbeddingColumnName("embedding")
+            .withContentColumnName("content")
+            .withMetadataColumnName("metadata")
+            .withDistanceType(PgVectorStore.DistanceType.COSINE)
+            .withDimensions(1536)
+            .build()
+
+        return PgVectorStore(jdbcTemplate, config)
+    }
+} 

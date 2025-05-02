@@ -1,0 +1,143 @@
+term,definition
+Artificial Intelligence,The simulation of human intelligence processes by machines
+Machine Learning,A subset of AI that focuses on systems learning from data
+Deep Learning,A type of machine learning using neural networks with multiple layers
+Neural Network,A computing system inspired by biological neural networks
+Natural Language Processing,AI's ability to understand and generate human language
+Computer Vision,AI's ability to interpret and understand visual information
+Algorithm,A set of rules or instructions for solving a problem
+Big Data,Extremely large datasets that require special processing
+Cloud Computing,Delivery of computing services over the internet
+Virtualization,Creating a virtual version of a resource
+Containerization,Packaging software with its dependencies
+Microservices,Architectural style that structures an application as services
+API,Application Programming Interface for software communication
+DevOps,Combination of development and operations practices
+CI/CD,Continuous Integration and Continuous Deployment
+Blockchain,A distributed ledger technology
+Cryptography,The practice of secure communication
+Cybersecurity,Protection of internet-connected systems
+Firewall,A network security system
+Encryption,Process of encoding information
+Authentication,Verifying the identity of a user
+Authorization,Granting permissions to authenticated users
+SQL,Structured Query Language for databases
+NoSQL,Non-relational database systems
+Data Warehouse,A system for data analysis and reporting
+ETL,Extract, Transform, Load process for data
+Data Mining,Process of discovering patterns in large datasets
+Business Intelligence,Tools for analyzing business information
+Predictive Analytics,Using data to predict future outcomes
+Data Science,Interdisciplinary field for extracting insights from data
+Python,A popular programming language for data science
+Java,An object-oriented programming language
+JavaScript,A scripting language for web development
+TypeScript,A typed superset of JavaScript
+React,A JavaScript library for building user interfaces
+Vue.js,A progressive JavaScript framework
+Angular,A platform for building web applications
+Node.js,A JavaScript runtime environment
+REST,Representational State Transfer architectural style
+GraphQL,A query language for APIs
+WebSocket,A protocol for real-time communication
+OAuth,An open standard for access delegation
+JWT,JSON Web Token for secure information transmission
+Docker,A platform for containerization
+Kubernetes,An orchestration system for containers
+AWS,Amazon Web Services cloud platform
+Azure,Microsoft's cloud computing platform
+GCP,Google Cloud Platform
+Serverless,Cloud computing execution model
+Lambda,A serverless computing service
+S3,Simple Storage Service by AWS
+EC2,Elastic Compute Cloud by AWS
+RDS,Relational Database Service by AWS
+VPC,Virtual Private Cloud
+IAM,Identity and Access Management
+SaaS,Software as a Service
+PaaS,Platform as a Service
+IaaS,Infrastructure as a Service
+CI,Continuous Integration
+CD,Continuous Deployment
+Git,A distributed version control system
+GitHub,A platform for version control and collaboration
+GitLab,A web-based Git repository manager
+Jenkins,An automation server for CI/CD
+Terraform,An infrastructure as code tool
+Ansible,An automation tool for IT tasks
+Kubernetes,An open-source container orchestration platform
+Helm,A package manager for Kubernetes
+Prometheus,A monitoring and alerting toolkit
+Grafana,A visualization and analytics platform
+ELK Stack,Elasticsearch, Logstash, and Kibana for log analysis
+Splunk,A platform for searching and analyzing machine data
+Nagios,A monitoring system for IT infrastructure
+Zabbix,An enterprise-class monitoring solution
+New Relic,A performance monitoring platform
+Dynatrace,A software intelligence platform
+AppDynamics,An application performance management tool
+Sentry,An error tracking platform
+Datadog,A monitoring service for cloud applications
+Sumo Logic,A cloud-native machine data analytics platform
+Loggly,A cloud-based log management service
+Papertrail,A cloud-based log management solution
+Graylog,An open-source log management platform
+Fluentd,An open-source data collector
+Filebeat,A lightweight shipper for logs
+Metricbeat,A lightweight shipper for metrics
+Packetbeat,A lightweight network packet analyzer
+Heartbeat,A lightweight uptime monitor
+Auditbeat,A lightweight audit data shipper
+Functionbeat,A lightweight serverless forwarder
+Journalbeat,A lightweight systemd journal shipper
+Winlogbeat,A lightweight Windows event log shipper
+Premium,The amount paid for an insurance policy
+Deductible,The amount paid out of pocket before insurance covers the rest
+Policyholder,The person or entity that owns an insurance policy
+Claim,A request for payment under an insurance policy
+Coverage,The protection provided by an insurance policy
+Exclusion,Specific conditions or circumstances not covered by a policy
+Endorsement,An amendment or addition to an insurance policy
+Underwriting,The process of evaluating risk for insurance
+Beneficiary,The person who receives benefits from an insurance policy
+Actuary,A professional who calculates insurance risks and premiums
+Liability,Legal responsibility for damages or injuries
+Indemnity,Compensation for loss or damage
+Reinsurance,Insurance purchased by an insurance company to manage risk
+Term Insurance,Life insurance for a specific period
+Whole Life Insurance,Life insurance with lifelong coverage
+Universal Life Insurance,A flexible life insurance policy with investment options
+Annuity,A financial product providing regular payments
+Rider,An additional benefit added to an insurance policy
+Grace Period,The time allowed for late premium payments without policy lapse
+Lapse,The termination of an insurance policy due to non-payment
+Subrogation,The insurer's right to recover costs from a third party
+Peril,A specific risk or cause of loss covered by insurance
+Hazard,A condition increasing the likelihood of a loss
+Adjuster,A professional who evaluates insurance claims
+Broker,An intermediary who sells insurance policies
+Agent,A representative of an insurance company
+Third-Party Insurance,Coverage for damages caused to others
+Comprehensive Insurance,Coverage for a wide range of risks
+Collision Insurance,Coverage for vehicle damage from collisions
+No-Fault Insurance,Coverage regardless of who is at fault
+Umbrella Policy,Additional liability coverage beyond standard policies
+Health Insurance,Coverage for medical expenses
+Disability Insurance,Coverage for lost income due to disability
+Travel Insurance,Coverage for travel-related risks
+Homeowners Insurance,Coverage for home and property
+Renters Insurance,Coverage for personal belongings in a rental property
+Auto Insurance,Coverage for vehicles and drivers
+Marine Insurance,Coverage for ships and cargo
+Flood Insurance,Coverage for flood-related damages
+Earthquake Insurance,Coverage for earthquake-related damages
+Business Insurance,Coverage for business risks
+Professional Liability Insurance,Coverage for professional errors or negligence
+Workers' Compensation Insurance,Coverage for workplace injuries
+Life Insurance,Coverage providing financial support after death
+Critical Illness Insurance,Coverage for severe illnesses
+Long-Term Care Insurance,Coverage for extended care services
+Pet Insurance,Coverage for veterinary expenses
+Crop Insurance,Coverage for agricultural losses
+Title Insurance,Coverage for property title disputes
+Mortgage Insurance,Coverage for mortgage payment defaults

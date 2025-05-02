@@ -1,0 +1,93 @@
+term,definition
+Artificial Intelligence,The simulation of human intelligence processes by machines
+Machine Learning,A subset of AI that focuses on systems learning from data
+Deep Learning,A type of machine learning using neural networks with multiple layers
+Neural Network,A computing system inspired by biological neural networks
+Natural Language Processing,AI's ability to understand and generate human language
+Computer Vision,AI's ability to interpret and understand visual information
+Algorithm,A set of rules or instructions for solving a problem
+Big Data,Extremely large datasets that require special processing
+Cloud Computing,Delivery of computing services over the internet
+Virtualization,Creating a virtual version of a resource
+Containerization,Packaging software with its dependencies
+Microservices,Architectural style that structures an application as services
+API,Application Programming Interface for software communication
+DevOps,Combination of development and operations practices
+CI/CD,Continuous Integration and Continuous Deployment
+Blockchain,A distributed ledger technology
+Cryptography,The practice of secure communication
+Cybersecurity,Protection of internet-connected systems
+Firewall,A network security system
+Encryption,Process of encoding information
+Authentication,Verifying the identity of a user
+Authorization,Granting permissions to authenticated users
+SQL,Structured Query Language for databases
+NoSQL,Non-relational database systems
+Data Warehouse,A system for data analysis and reporting
+ETL,Extract, Transform, Load process for data
+Data Mining,Process of discovering patterns in large datasets
+Business Intelligence,Tools for analyzing business information
+Predictive Analytics,Using data to predict future outcomes
+Data Science,Interdisciplinary field for extracting insights from data
+Python,A popular programming language for data science
+Java,An object-oriented programming language
+JavaScript,A scripting language for web development
+TypeScript,A typed superset of JavaScript
+React,A JavaScript library for building user interfaces
+Vue.js,A progressive JavaScript framework
+Angular,A platform for building web applications
+Node.js,A JavaScript runtime environment
+REST,Representational State Transfer architectural style
+GraphQL,A query language for APIs
+WebSocket,A protocol for real-time communication
+OAuth,An open standard for access delegation
+JWT,JSON Web Token for secure information transmission
+Docker,A platform for containerization
+Kubernetes,An orchestration system for containers
+AWS,Amazon Web Services cloud platform
+Azure,Microsoft's cloud computing platform
+GCP,Google Cloud Platform
+Serverless,Cloud computing execution model
+Lambda,A serverless computing service
+S3,Simple Storage Service by AWS
+EC2,Elastic Compute Cloud by AWS
+RDS,Relational Database Service by AWS
+VPC,Virtual Private Cloud
+IAM,Identity and Access Management
+SaaS,Software as a Service
+PaaS,Platform as a Service
+IaaS,Infrastructure as a Service
+CI,Continuous Integration
+CD,Continuous Deployment
+Git,A distributed version control system
+GitHub,A platform for version control and collaboration
+GitLab,A web-based Git repository manager
+Jenkins,An automation server for CI/CD
+Terraform,An infrastructure as code tool
+Ansible,An automation tool for IT tasks
+Kubernetes,An open-source container orchestration platform
+Helm,A package manager for Kubernetes
+Prometheus,A monitoring and alerting toolkit
+Grafana,A visualization and analytics platform
+ELK Stack,Elasticsearch, Logstash, and Kibana for log analysis
+Splunk,A platform for searching and analyzing machine data
+Nagios,A monitoring system for IT infrastructure
+Zabbix,An enterprise-class monitoring solution
+New Relic,A performance monitoring platform
+Dynatrace,A software intelligence platform
+AppDynamics,An application performance management tool
+Sentry,An error tracking platform
+Datadog,A monitoring service for cloud applications
+Sumo Logic,A cloud-native machine data analytics platform
+Loggly,A cloud-based log management service
+Papertrail,A cloud-based log management solution
+Graylog,An open-source log management platform
+Fluentd,An open-source data collector
+Filebeat,A lightweight shipper for logs
+Metricbeat,A lightweight shipper for metrics
+Packetbeat,A lightweight network packet analyzer
+Heartbeat,A lightweight uptime monitor
+Auditbeat,A lightweight audit data shipper
+Functionbeat,A lightweight serverless forwarder
+Journalbeat,A lightweight systemd journal shipper
+Winlogbeat,A lightweight Windows event log shipper 
