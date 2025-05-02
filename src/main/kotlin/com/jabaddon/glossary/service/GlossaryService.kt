@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service
 import org.springframework.web.multipart.MultipartFile
 import java.io.BufferedReader
 import java.io.InputStreamReader
+import java.sql.ResultSet
 import java.util.UUID
 
 @Service
@@ -58,43 +59,12 @@ class GlossaryService(
         // Direct SQL search for content similarity
         val sqlResults = jdbcTemplate.query(
             """
-            SELECT id, content, metadata 
+            SELECT content, metadata 
             FROM vector_store 
             WHERE content ILIKE ? 
             LIMIT ?
             """,
-            { rs, _ ->
-                val id = rs.getString("id")?.let { UUID.fromString(it) }
-                val content = rs.getString("content") ?: ""
-                val metadataStr = rs.getString("metadata") ?: "{}"
-
-                // Parse metadata string to Map
-                val metadata: Map<String, Any> = try {
-                    objectMapper.readValue(metadataStr)
-                } catch (e: Exception) {
-                    mapOf()
-                }
-
-                // Extract information preferring metadata map over content parsing
-                val term = metadata["term"]?.toString() ?: if (content.contains(":")) {
-
-                    content.substringBefore(":").trim()
-                } else {
-                    ""
-                }
-
-                val definition = metadata["definition"]?.toString() ?: if (content.contains(":")) {
-                    content.substringAfter(":").trim()
-                } else {
-                    content
-                }
-
-                GlossaryEntry(
-                    id = metadata["id"]?.let { UUID.fromString(it as String) },
-                    term = term,
-                    definition = definition
-                )
-            },
+            toGlossaryEntryMapper(),
             "%$query%",
             limit
         )
@@ -115,5 +85,36 @@ class GlossaryService(
                 }
             )
         })
+    }
+
+    private fun toGlossaryEntryMapper() = { rs: ResultSet, _: Int ->
+        val content = rs.getString("content") ?: ""
+        val metadataStr = rs.getString("metadata") ?: "{}"
+
+        // Parse metadata string to Map
+        val metadata: Map<String, Any> = try {
+            objectMapper.readValue(metadataStr)
+        } catch (e: Exception) {
+            mapOf()
+        }
+
+        // Extract information preferring metadata map over content parsing
+        val term = metadata["term"]?.toString() ?: if (content.contains(":")) {
+            content.substringBefore(":").trim()
+        } else {
+            ""
+        }
+
+        val definition = metadata["definition"]?.toString() ?: if (content.contains(":")) {
+            content.substringAfter(":").trim()
+        } else {
+            content
+        }
+
+        GlossaryEntry(
+            id = metadata["id"]?.let { UUID.fromString(it as String) },
+            term = term,
+            definition = definition
+        )
     }
 }
