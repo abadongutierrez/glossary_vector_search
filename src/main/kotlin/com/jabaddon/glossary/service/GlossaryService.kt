@@ -42,7 +42,7 @@ class GlossaryService(
         }
 
         // Generate embeddings and store in vector database
-        entries.windowed(50, 50, true).forEachIndexed { _, chunk ->
+        entries.windowed(1, 1, true).forEachIndexed { _, chunk ->
             vectorStore.add(chunk.map { it.toDocument() })
         }
 
