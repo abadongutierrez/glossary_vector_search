@@ -11,5 +11,5 @@ Content-Type: text/csv
 
 ###
 GET http://localhost:8080/api/glossary/search?
-    query=claim&
-    limit=20
+    query=java&
+    limit=5
